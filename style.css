@@ -1,0 +1,567 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    height: 9vh;
+    border: 1px solid rgb(218, 218, 218);
+    background-color: rgb(247, 247, 247);
+}
+
+.nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.blank {
+    height: 8vh;
+    width: 5vw;
+}
+
+.nav svg {
+    width: 35px;
+    height: 100%;
+    margin: 9px 12px 9px 6px;
+}
+
+.nav-options{
+    padding: 24px 8px 24px 12px;
+    transition: 0.1s all ease-out;
+    cursor: pointer;
+    color: rgb(119, 119, 119);
+    max-width: 20vw;
+}
+
+.nav-options:hover {
+    color: rgb(32, 32, 32);
+    transition: ease-in 0.1s all;
+}
+
+.blank-two {
+    height: 6.5vh;
+    width: 32vw;
+}
+
+#get-started {
+    height: 5.5vh;
+    width: 13vw;
+    background-color: rgb(20, 110, 245);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#get-started:hover {
+    background-color: rgb(43, 126, 252);
+}
+.fas{
+    font-size: 1.5rem;
+    position: absolute;
+    left : 90%;
+    transform: translateX(-50%);
+    display: none;
+}
+#btn-bold {
+    font-weight: 600;
+    color: white;
+    font-size: clamp(0.7rem, 1vw, 1.2rem);
+}
+
+.container {
+    max-width: 100%;
+    margin: 4rem 3.6rem;
+    padding: 0 1.5rem;
+}
+
+.content {
+    max-height: 35vh;
+    max-width: 100%;
+}
+
+.made-in-btn {
+    height: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#made-in-btn {
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(176, 176, 176, 0.455);
+    background: rgb(244, 243, 243);
+}
+
+#btn-text-two {
+    font-weight: 600;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.h1 {
+    max-height: 20vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#heading {
+    font-size: clamp(1.5rem, 5vw, 3.8rem);
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+.by-line {
+    max-height: 5vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#by-line {
+    font-size: clamp(0.65rem, 1.3vw, 1.2rem);
+    text-align: center;
+    color: rgb(118, 118, 118);
+}
+
+#blue-text {
+    color: rgb(0, 119, 255);
+    font-size: clamp(0.65rem, 1.2vw, 1.2rem);
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.input {
+    height: 6.43vh;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input {
+    height: 100%;
+    width: 41.67vw;
+    border-radius: 10px;
+    border: solid 1px rgb(198, 198, 198);
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.selective-btn {
+    height: 6.43vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.select-btn {
+    height: 80%;
+    width: 100px;
+    margin-right: 2rem;
+    font-weight: 600;
+    border: 1px solid rgba(166, 166, 166, 0.581);
+    background-color: rgba(247, 246, 246, 0.753);
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.select-btn:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.filters {
+    height: 6vh;
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+}
+
+#selector {
+    height: 90%;
+    width: 10%;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    border: 1px solid rgb(195, 195, 195);
+    transition: all 0.2s ease-in;
+}
+
+#selector:hover {
+    background-color: rgba(170, 168, 168, 0.725);
+}
+
+.selector-options {
+    width: 10%;
+    background-color: rgb(152, 152, 152);
+}
+
+.clone-site-btn {
+    height: 90%;
+    margin-left: 0.5rem;
+    width: 20%;
+    background-color: rgb(251, 251, 251);
+    border-radius: 5px;
+    border: 1px solid rgb(195, 195, 195);
+    transition: background-color 0.2s ease-in;
+}
+
+.clone-site-btn:hover {
+    background-color: rgba(170, 168, 168, 0.725);
+}
+
+.showcase-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.showcase-btn button {
+    height: 90%;
+    width: 17%;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.1s ease-out, transform 0.1s ease-out;
+    cursor: pointer;
+}
+
+.showcase-btn button:hover {
+    background-color: rgb(40, 133, 255);
+    transform: scale(1.03);
+    transition: background-color 0.1s ease-in, transform 0.1s ease-in;
+}
+
+.sites-photos {
+    height: 100%;
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.image-container {
+    max-height: 45vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.image-info {
+    height: auto;
+    width: auto;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.owner-name {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.show-more {
+    margin-top: 4rem;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.show-more button {
+    height: 100%;
+    width: 10%;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(119, 119, 119, 0.329);
+    border-bottom: 1px grey solid;
+    transition: background-color 0.2s ease-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.show-more button:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.footer-container {
+    padding: clamp(1rem, 3vw, 5rem);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(178, 178, 178, 0.671);
+    padding-top: 3rem;
+}
+.elements{
+    height: auto;
+    max-width: 100%;
+}
+
+.heading {
+    font-weight: 600;
+    color: black;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.elements-text {
+    margin-top: clamp(0.5rem, 1vw, 1rem);
+    color: rgb(143, 143, 143);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.elements-text-two {
+    margin-top: clamp(1rem, 1.5vw, 2rem);
+    color: rgb(143, 143, 143);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+@media (max-width : 1024px){
+    .nav-options , .blank-two , #get-started{
+        display: none;
+    }
+    #selector{
+        width: 20%;
+        font-size: clamp(0.7rem,0.9vw, 1.1rem);
+    }
+    .showcase-btn button{
+        width: 25%;
+        font-size: clamp(0.6rem,1.4vw, 2rem);
+    }
+    .clone-site-btn{
+        width: 30%;
+        font-size: clamp(0.6rem,1vw, 1.2rem);
+    }
+    .fas{
+        font-size: 1.5rem;
+        position: absolute;
+        left : 90%;
+        transform: translateX(-50%);
+        display: block;
+    }
+    .select-btn{
+        margin-right: 1rem;
+        font-size: clamp(0.6rem , 1.2vw , 1.1rem);
+    }
+    .title{
+        font-size: clamp(0.7rem, 1vw, 1.3rem);
+    }
+    .owner-name{
+        font-size: clamp(0.7rem, 0.9vw, 1.2rem);
+    }
+    #heading{
+        font-size: clamp(2rem, 5vw , 3.3rem);
+    }
+}
+@media (max-width : 768px){
+    .select-btn{
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+    #heading{
+        padding-top: 1rem;
+    }
+    .clone-site-btn{
+        font-size : 0.8rem;
+    }
+    .input input{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .sites-photos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .h1{
+        padding-top: 0;
+    }
+    .made-in-btn{
+        height: auto;
+        width: 100%;
+    }
+    #made-in-btn{
+        height: 5vh;
+        width : 35vw;
+    }
+    #btn-text-two{
+        font-size: clamp(1.3rem, 1.5vw ,2rem);
+    }
+    .container{
+        margin: 3rem 2rem;
+    }
+    #btn-text-two{
+        font-size: 0.6rem;
+    }
+    .show-more{
+        margin-top: 1.5rem;
+    }
+    .show-more button{
+        width: 15%;
+    }
+    .footer-container{
+        margin: 0;
+    }
+    #selector{
+        font-size : 0.8rem;
+    }
+    .filters{
+        margin-top: 1rem;
+        display: inline-block;
+    }
+    .showcase-btn{
+        margin-top: 1rem;
+        justify-content: start;
+    }
+    .showcase-btn button{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width : 483px){
+    .container{
+        padding: 0;
+    }
+    #made-in-btn{
+        width: 50%;
+    }
+    .sites-photos{
+        grid-template-columns: 1fr;
+    }
+    #selector{
+        height: 100%;
+        width: 30%;
+        font-size: clamp(0.9rem , 1.3vw , 1.9rem);
+    }
+    .clone-site-btn{
+        width: 60%;
+        height: 100%;
+        font-size: clamp(0.9rem , 1.3vw , 1.9rem);
+
+    }
+    .select-btn{
+        width: 15vw;
+        font-size: clamp(0.7rem , 0.9vw , 1.9rem);
+    }
+    .showcase-btn{
+        height: 100%;
+        width: 42vw;
+    }
+    .showcase-btn button{
+        width: 100%;
+        font-size: clamp(0.9rem , 1.3vw , 1.9rem);
+    }
+    .heading{
+        font-size: 0.8rem;
+    }
+    .show-more button{
+        width: 50%;
+    }
+    .heading {
+        font-size: clamp(0.7em, 1vw, 1.2rem); 
+    }
+    .elements-text {
+        font-size: clamp(0.7rem, 1vw, 1rem); 
+    }
+}
+@media (max-width : 375px){
+    .heading{
+        font-size: clamp(0.7em, 1vw , 1.2rem);
+    }
+    .elements-text-two{
+        font-size: clamp(0.7rem, 1vw , 1.2rem);
+    }
+    .showcase-btn{
+        width: 42vw;
+    }
+    .showcase-btn button{
+        width: 100%;
+    }
+}
+@media (max-width : 350px){
+    #heading{
+        font-size: 1.6rem;
+    }
+    .select-btn{
+        height: 100%;
+        width: 50%;
+        font-size: 0.7rem;
+    }
+}
+@media (max-width : 280px){
+    .heading{
+        font-size: 0.6rem;
+        margin-top: 2rem;
+    }
+    .elements-text{
+        font-size: 0.5rem;
+    }
+    .elements-text-two{
+        font-size : 0.5rem
+    }
+    .footer-container{
+        display: block;
+    }
+    #heading{
+        font-size: 0.9rem;
+    }
+    .clone-site-btn{
+        font-size : 0.5rem
+    }
+    .fas{
+        font-size: 0.5rem;
+    }
+    .select-btn{
+        font-size: clamp(0.5rem, 0.5vw , 1vw);
+    }
+}
+@media (max-width : 150px){
+    .select-btn ,.clone-site-btn{
+        display: none;
+    }
+    #heading{
+        font-size: 0.5rem;
+    }
+    *{
+        display: none;
+    }
+}
